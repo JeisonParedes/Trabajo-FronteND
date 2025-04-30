@@ -1,0 +1,138 @@
+/* ===== Estilo General ===== */
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* ===== Barra Superior ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #000000;
+    border-bottom: 2px solid #00ff00;
+}
+
+header h1 {
+    color: #00ff00;
+    font-size: 2em;
+    margin: 0;
+}
+
+header .fecha {
+    color: #00ff00;
+    font-size: 1em;
+}
+
+/* ===== Contenedor Principal ===== */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ===== Paneles ===== */
+.panel {
+    background-color: #111111;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== Títulos ===== */
+.panel h2 {
+    color: #00ff00;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* ===== Formularios ===== */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario input,
+.formulario select {
+    padding: 10px;
+    background-color: #000000;
+    border: 1px solid #00ff00;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    border-color: #00cc00;
+    outline: none;
+}
+
+.formulario button {
+    background-color: #00ff00;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #00cc00;
+}
+
+/* ===== Listado de tarjetas ===== */
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ===== Tarjeta individual ===== */
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card span {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/* Acciones dentro de la tarjeta */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.actions button:hover {
+    color: #ffffff;
+}
